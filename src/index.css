@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-black: #080B14;
+  --color-prussian: #080B14;
+  --color-orange: #FB2900;
+  --color-alabaster: #e5e5e5;
+  --color-white: #ffffff;
+}
+
+/* DSLR Menu Global Aesthetics */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  background-color: var(--color-black);
+  color: var(--color-alabaster);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--color-prussian);
+}
+
+/* Scrollbar styling for a technical feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-prussian);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-black);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-orange);
+}
