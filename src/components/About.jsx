@@ -1,5 +1,6 @@
 import React from 'react';
 import { Camera } from 'lucide-react';
+import profileImage from '../assets/profile.jpg';
 
 const About = () => {
   return (
@@ -18,13 +19,15 @@ const About = () => {
 
         {/* Left Column: Photo Area */}
         <div className="w-full md:w-1/3 flex-shrink-0 flex items-center justify-center mb-35">
-          <div className="w-full aspect-square md:aspect-[4/5] max-w-[280px] bg-[#080B14] rounded-xl border border-[#FB2900]/60 hover:border-[#E00005] transition-all duration-300 hover:scale-[1.02] flex flex-col items-center justify-center shadow-lg group relative overflow-hidden">
-            <Camera className="w-12 h-12 text-[#4F494B] group-hover:text-[#E00005]/50 transition-colors mb-4" />
-            <div className="text-[#444] font-mono text-xs uppercase tracking-widest group-hover:text-[#E00005]/80 transition-colors">
-              IMG_SENSOR_OFF
-            </div>
-            <div className="absolute top-3 left-3 w-1.5 h-1.5 rounded-full bg-[#FB2900] animate-pulse opacity-0 group-hover:opacity-100 transition-opacity" />
-            <div className="absolute bottom-3 right-3 text-[10px] font-mono text-[#4F494B]">F2.8 1/60 ISO400</div>
+          <div className="w-full aspect-square md:aspect-[4/5] max-w-[280px] bg-[#080B14] rounded-xl border border-[#FB2900]/60 hover:border-[#E00005] transition-all duration-300 hover:scale-[1.02] overflow-hidden shadow-lg relative">
+            <img
+              src={profileImage}
+              alt="Vetrivel A profile"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+            <div className="absolute top-3 left-3 w-1.5 h-1.5 rounded-full bg-[#FB2900] animate-pulse" />
+            <div className="absolute bottom-3 right-3 text-[10px] font-mono text-[#e5e5e5]">VETRIVEL A</div>
           </div>
         </div>
 
